@@ -1,0 +1,21 @@
+{
+  "name": "portafolio",
+  "homepage": "https://CristianDago.github.io/portfolio",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "typescript": "~5.7.2",
+    "vite": "^6.3.1"
+  },
+  "dependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
