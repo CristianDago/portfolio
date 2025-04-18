@@ -1,0 +1,100 @@
+@use "../../assets/styles/variables/variables.module.scss" as vars;
+
+.underline {
+  width: 60px;
+  height: 4px;
+  background-color: vars.$secondary-color;
+  margin: 8px auto 30px auto;
+  border-radius: 2px;
+}
+
+.timeline {
+  background-color: vars.$grey;
+  text-align: center;
+  padding: 50px;
+}
+
+.timelineContainer {
+  padding: 2rem 1rem;
+  width: 100%;
+  overflow-x: hidden;
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+}
+
+.timelineTrack {
+  display: flex;
+  gap: 3rem;
+  position: relative;
+  padding: 2rem 0;
+  border-top: 3px solid #ccc;
+  overflow-x: auto;
+  width: 100%;
+  scroll-behavior: smooth; /* Desplazamiento suave */
+  scroll-snap-type: x mandatory; /* Alineación de elementos al hacer scroll */
+  -webkit-overflow-scrolling: touch;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    border-top: none;
+    border-left: 3px solid #ccc;
+    padding-left: 2rem;
+    overflow-x: hidden;
+    gap: 2rem;
+  }
+}
+
+.timelineCard {
+  position: relative;
+  text-align: center;
+  min-width: 200px;
+  max-width: 300px;
+  flex-shrink: 0;
+  scroll-snap-align: start; /* Ajuste de los elementos al inicio de la pantalla */
+
+  @media (max-width: 768px) {
+    text-align: left;
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+
+.timelineCircle {
+  width: 20px;
+  height: 20px;
+  background-color: vars.$secondary-color;
+  border-radius: 50%;
+  position: absolute;
+  top: -34px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 3px solid white;
+
+  @media (max-width: 768px) {
+    top: 0;
+    left: -32px;
+    transform: none;
+  }
+}
+
+.timelineYear {
+  font-weight: bold;
+  margin-top: 1rem;
+  color: vars.$secondary-color;
+  font-size: 1.1rem;
+}
+
+.timelineTitle {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.timelineDescription {
+  margin-top: 0.25rem;
+  font-size: 0.9rem;
+  color: #555;
+}

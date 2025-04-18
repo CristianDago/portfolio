@@ -1,0 +1,39 @@
+@use "../../assets/styles/variables/variables.module.scss" as vars;
+
+.banner {
+  height: 500px;
+  background-image: url("../../assets/images/banner.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding: 15px;
+  z-index: 1; /* Mantén este z-index bajo para que el menú esté por encima */
+}
+
+.bannerOverlay {
+  position: absolute;
+  text-transform: uppercase;
+  top: 0;
+  left: 0;
+  font-size: 3em;
+  line-height: 1.5em;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  z-index: 2; /* Esto mantiene el texto sobre el banner */
+}
+
+.fontLine {
+  color: transparent; /* Hace que el relleno sea transparente */
+  -webkit-text-stroke: 1px white; /* Aplica borde blanco */
+  text-stroke: 1px white; /* Compatibilidad con algunos navegadores */
+  font-weight: bold;
+  margin: 0;
+}
