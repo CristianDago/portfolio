@@ -1,0 +1,48 @@
+@use "../../../assets/styles/variables/variables.module.scss" as vars;
+
+.underline {
+    width: 60px;
+    height: 4px;
+    background-color: vars.$primary-color;
+    margin: 8px auto 30px auto;
+    border-radius: 2px;
+  }
+
+.footer {
+    padding: 50px;
+    background-color: vars.$secondary-color;
+    margin-top: auto;
+    text-align: center;
+  }
+  
+  .iconContainer {
+    margin-bottom: 0.5rem;
+  }
+  
+  .iconLink {
+    margin: 0 10px;
+    font-size: 3.5rem;
+    transition: transform 0.2s ease;
+  }
+  
+  .iconLink:hover {
+    transform: scale(1.1);
+  }
+  
+  .iconLink:nth-child(1) {
+    color: vars.$primary-color; // GitHub
+  }
+  
+  .iconLink:nth-child(2) {
+    color: vars.$primary-color; // LinkedIn
+  }
+  
+  .iconLink:nth-child(3) {
+    color: vars.$primary-color; // Email
+  }
+  
+  .copyText {
+    color: #333;
+    font-size: 0.95rem;
+  }
+  

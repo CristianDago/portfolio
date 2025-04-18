@@ -5,7 +5,7 @@ import cv from "../../assets/images/foto_cv.png";
 
 const AboutUs: React.FC = () => {
   return (
-    <section>
+    <section id="sobre-mi">
       <Grid className={`${css.about} grid-columns-2`}>
         <div>
           <img src={cv} alt="Cristian Gallardo" className={css.aboutImg} />

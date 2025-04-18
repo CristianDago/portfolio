@@ -4,6 +4,11 @@
 @use "../styles/variables/variables.module.scss" as vars;
 @use "../styles/mixins/grid.module.scss" as grid;
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 html, body, #root {
   margin: 0;
   padding: 0;

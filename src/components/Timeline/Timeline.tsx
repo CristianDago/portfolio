@@ -8,6 +8,11 @@ interface TimelineItem {
 
 const timelineData: TimelineItem[] = [
   {
+    year: "2025",
+    title: "Desafío Latam",
+    description: "Desarrollo Backend con Node/Express.",
+  },
+  {
     year: "2023",
     title: "Desafío Latam",
     description: "Desarrollo Full Stack JavaScript.",
@@ -22,11 +27,7 @@ const timelineData: TimelineItem[] = [
     title: "Universidad Diego Portales",
     description: "Publicidad y Comunicación Social.",
   },
-  {
-    year: "2011",
-    title: "Curso superior",
-    description: "Ingresó al nivel medio.",
-  },
+
 ];
 
 const Timeline = () => {
